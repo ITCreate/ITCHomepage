@@ -1,0 +1,206 @@
+@CHARSET "UTF-8";
+/* -- デバッグ用 -- */
+.db {
+	border: 1px solid black;
+}
+
+#wrap {
+	height:670px;
+}
+
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* -- header部分 -- */
+#header_wrap {
+	position: fixed;
+	width: 1000px;
+	height: 100px;
+}
+
+.intro_header {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	background: -webkit-linear-gradient(#FFF 50%, #BBB);
+	height: 120px;
+	width: 5400px;
+}
+
+/*ヘッダーのITCマーク*/
+.ITC_icon {
+	float: left;
+}
+
+/* -- ページ内リンクリストのスタイル --*/
+/*ページ内リンクボタンのスタイル*/
+.menuicon_frame {
+	display: block;
+	float: left;
+	width: 120px;
+	height: 40px;
+	margin: 3px;
+	border: 1px solid #90C060;
+	background: -webkit-linear-gradient(#FFF 50%, #BBB);
+	border-radius: 5px;
+	text-align: center;
+	/*フォント*/
+	color: #90C060;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #000;
+	text-decoration: none;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* -- メインコンテンツ(中央部) -- */
+#inclusion_maincontents {
+	position:relative;
+	clear: left;
+	display: block;
+	height: 450px;
+	width: 2500px;
+}
+
+.mainarea_common {
+	float: left;
+	position: relative;
+	display: block;
+	width: 1100px;
+	height: 450px;
+}
+
+/* -- ページTOPのコンテンツ --*/
+.vcatch {
+	position: absolute;
+	left: 500px;
+	height: 450px;
+	width: 270px;
+	background-color: #cccccc;
+}
+
+#whatsnew {
+	position: absolute;
+	bottom: 20px;
+	background-image: url(../images/whatsnews.png);
+	opacity: 1;
+	left: 80px;	
+	width: 475px;
+	height: 150px;
+	border-radius: 5px;
+	-webkit-box-shadow:6px 5px 7px #000;
+	
+}
+
+#whatsnew ul {
+	position: relative;
+	top: 45px;
+	left: 20px;
+}
+
+#obj3 {
+	position: absolute;
+	bottom: 50px;
+	right:  0px;
+}
+
+/* -- 各表示オブジェクトの個別設定 -- */
+/* -- 部長挨拶 -- */
+#obj1 {
+	position: relative;
+	height: 300px;
+	width: 550px;
+	
+	top: 80px;
+	left:225px;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+#obj2 {
+	position: absolute;
+	bottom: 0px;
+	left:  775px;
+}
+
+/*部員紹介*/
+.type-member {
+	height: 150px;
+	width: 110px;
+	border-radius: 5px;
+	background-color: #DDFFDD;
+	border: 1px solid black;
+}
+
+#obj4-1 {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+#obj4-2 {
+	position: absolute;
+	top: 250px;
+	left: 300px;
+}
+
+#obj4-3 {
+	position: absolute;
+	top: 150px;
+	left: 500px;
+}
+
+
+#obj4-4 {
+	position: absolute;
+	top: 130px;
+	left: 700px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* -- フッターのスタイル -- */
+footer {
+	position: relative;
+	height: 100px;
+	width: 5400px;
+	background: -webkit-linear-gradient(#609030 10%, #90C060);;
+}
+
+#footer_wrap {
+	position: relative;
+	width: 700px;
+	height: 100px;
+}
+
+#copyright {
+	position: fixed;
+	top: 580px;
+	left: 10px;
+	/*フォント*/
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	color: white;
+	text-shadow: 1px 1px 3px #000; 
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* -- 距離クラス(表示オブジェクトの立体表現) -- */
+/* - level0(最前面) - */
+.dist1 {
+	z-index: 40;
+}
+
+/* - Level1(基準) - */
+.dist2 {
+	z-index: 30;
+}
+
+/* - Level2(奥) - */
+.dist3 {
+	z-index: 20;
+}
+
+/* - Level3(かなり奥) - */
+.dist4 {
+	z-index: 10;
+}

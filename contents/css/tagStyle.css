@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+* {
+	bgcolor: black;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	
+}
+
+ul {
+
+}
+
+li {
+	list-style-type: none;
+
+}
+
+p {
+	font-size: 20px;
+}
