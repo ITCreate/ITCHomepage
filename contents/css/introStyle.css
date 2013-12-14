@@ -83,7 +83,7 @@
 	bottom: 20px;
 	background-image: url(../images/whatsnews.png);
 	opacity: 1;
-	left: 80px;	
+	left: 80px;
 	width: 475px;
 	height: 150px;
 	border-radius: 5px;
@@ -109,53 +109,142 @@
 	position: relative;
 	height: 300px;
 	width: 550px;
-	
+	background-image: url(../images/obj1.png);
+	opacity: 1;
+	-webkit-box-shadow:6px 5px 7px #000;
 	top: 80px;
 	left:225px;
 	border-radius: 15px;
-	border: 1px solid black;
+}
+
+.sample {
+	color: #FD9855;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 2px 2px 1px #F44;
 }
 
 #obj2 {
 	position: absolute;
 	bottom: 0px;
-	left:  775px;
+	left:  775px
 }
 
-/*部員紹介*/
-.type-member {
-	height: 150px;
-	width: 110px;
-	border-radius: 5px;
-	background-color: #DDFFDD;
-	border: 1px solid black;
+/*メニュー３*/
+.action_frame {
+	width: 300px;
+	height: 200px;
+	background-color: #F00;
 }
 
-#obj4-1 {
+#aa {
 	position: absolute;
 	top: 50px;
 	left: 100px;
 }
 
-#obj4-2 {
+#ab {
 	position: absolute;
-	top: 250px;
+	top: 50px;
+	left: 540px;
+}
+
+#ac {
+	position: absolute;
+	top: 300px;
+	left: 100px;
+}
+#ad{
+	position: absolute;
+	top: 300px;
+	left: 540px;
+}
+
+/*部員紹介*/
+#member_sub_window {
+	position: absolute;
 	left: 300px;
+	top: 10px;
+	width: 600px;
+	height: 400px;
+	border: 1px solid black;
+}
+#memberwrap {
+	position: absolute;
+	left: 920px;
+	top: 10px;
+	width: 160px;
+	height: 1160px;
+	border: 1px solid black;
+}
+
+.type-member {
+	height: 60px;
+	width: 150px;
+	border-radius: 5px;
+	bottom: 10px;
+	float: left;
+	background-color: #DDFFDD;
+	border: 1px solid black;
+}
+
+#obj4-1 {
+
+}
+
+#obj4-2 {
+
+
 }
 
 #obj4-3 {
-	position: absolute;
-	top: 150px;
-	left: 500px;
+
+
 }
 
 
 #obj4-4 {
-	position: absolute;
-	top: 130px;
-	left: 700px;
+
+
 }
 
+#obj4-5 {
+
+
+}
+
+#obj4-6 {
+
+
+}
+
+#obj4-7 {
+
+
+}
+
+#obj4-8 {
+
+
+}
+
+#obj4-9 {
+
+
+}
+
+#obj4-10 {
+
+
+}
+#obj4-11 {
+
+
+}
+#obj4-12 {
+
+
+}
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 /* -- フッターのスタイル -- */
 footer {
