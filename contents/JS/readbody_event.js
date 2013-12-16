@@ -18,6 +18,6 @@ $("body").ready(function(){
 
 	$("#obj1").offset({left: obj1_offset});
 
-
+	
 	member_scroll();
 });

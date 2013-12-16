@@ -1,0 +1,130 @@
+
+@CHARSET "UTF-8";
+/*部員紹介*/
+#member_sub_window {
+	position: absolute;
+	left: 300px;
+	top: 10px;
+	width: 600px;
+	height: 400px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#personaldata_window {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 300px;
+	height: 160px;
+	background-image: url(../images/window01.png);
+	/*フォント*/
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#profile_subjects {
+	float: left;
+
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 35px;
+	margin-left: 8px;
+}
+
+#myprofile {
+	float: left;
+	text-align: left;
+	margin-top: 35px;
+}
+.subject_name {
+
+}
+
+.personaldata {
+	
+
+}
+
+#memberwrap {
+	position: absolute;
+	left: 920px;
+	top: 10px;
+	width: 160px;
+	height: 400px;
+	overflow: hidden;
+	
+}
+
+.type_member {
+	height: 60px;
+	width: 150px;
+	border-radius: 5px;
+	bottom: 10px;
+	float: left;
+	background-color: #DDFFDD;
+	
+}
+
+.type_member:hover {
+	cursor: pointer;
+}
+
+#member1 {
+
+}
+
+#member2 {
+
+
+}
+
+#member3 {
+
+
+}
+
+
+#member4 {
+
+
+}
+
+#member5 {
+
+
+}
+
+#member6 {
+
+
+}
+
+#member7 {
+
+
+}
+
+#member8 {
+
+
+}
+
+#member9 {
+
+
+}
+
+#member10 {
+
+
+}
+#member11 {
+
+
+}
+#member12 {
+
+
+}

@@ -5,8 +5,10 @@
 <title>Insert title here</title>
 <link rel="styleSheet" type="text/css" href="css/tagStyle.css">
 <link rel="styleSheet" type="text/css" href="css/introStyle.css">
+<link rel="styleSheet" type="text/css" href="css/memberStyle.css">
 
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<!--  1.7.2 -->
 
 <script type="text/javascript" src="JS/scroll_event.js"></script>
 <script type="text/javascript" src="JS/insidelink_event.js"></script>
@@ -20,7 +22,7 @@
 	<!-- ここからヘッダ -->
 	<div id="intro_header" class="intro_header">
 	<div id="header_wrap" class="db">
-		<img src="images/test/img_logo.jpg" class="ITC_icon"></img>
+		<img src="images/img_logo.jpg" class="ITC_icon"></img>
 		<div id="debug">aa</div>
 		<!-- ここからメニューリスト -->
 		<div>
@@ -44,9 +46,7 @@
 		<div id="menu1_top" class="mainarea_common">
 
 			<!-- キャッチコピー -->
-			<div id="vcatch" class="vcatch">
-				ここに画像を挿入
-			</div>
+			<img id="vcatch" src="images/TitleLogo.png" class="vcatch"></img>
 			<!-- キャッチコピー終了 -->
 			
 			<!-- 更新情報 -->
@@ -101,24 +101,48 @@
 		
 		<!-- メニュー４開始 -->
 		<div id="menu4_member" class="mainarea_common">
-			<div id="member_sub_window"></div>
-
-			<div id="memberwrap">
-				<div id="obj4-1" class="type-member">obj4-1</div>
-				<div id="obj4-2" class="type-member">obj4-2</div>
-				<div id="obj4-3" class="type-member">obj4-3</div>
-				<div id="obj4-4" class="type-member">obj4-4</div>
-				<div id="obj4-5" class="type-member">obj4-5</div>
-				<div id="obj4-6" class="type-member">obj4-6</div>
-				<div id="obj4-7" class="type-member">obj4-7</div>
-				<div id="obj4-8" class="type-member">obj4-8</div>
-				<div id="obj4-9" class="type-member">obj4-9</div>
-				<div id="obj4-10" class="type-member">obj4-10</div>
-				<div id="obj4-11" class="type-member">obj4-11</div>
-				<div id="obj4-12" class="type-member">obj4-12</div>
-
+			<!-- メニュー４内ウインドウ -->
+			<div id="member_sub_window">
+				<!-- メンバーのプロフィールウインドウ -->
+				<div id="personaldata_window">
+					<div id="profile_subjects">
+						<div class="subject_name">Name:</div>
+						<div class="subject_name">Grade:</div>
+						<div class="subject_name">Course:</div>	
+						<div class="subject_name">Birthplace:</div>
+						<div class="subject_name">Speciality:</div>
+						<div class="subject_name">Comment:</div>
+					</div>
+						
+					<div id="myprofile">
+						<div id="personaldata_name" class="personaldata">No Name</div>
+						<div id="personaldata_grade" class="personaldata">None</div>
+						<div id="personaldata_course"> Nobe</div>
+						<div id="personaldata_birthplace">None</div>
+						<div id="personaldata_Speciality">None</div>
+						<div id="personaldata_comment"></div>
+					</div>
+				</div>
+				<!-- ここまでプロフィールウインドウ -->
 			</div>
-			
+			<!-- ここまでウインドウ -->
+
+			<!-- ここからメンバーアイコン -->
+			<div id="memberwrap">
+				<div id="member1" class="type_member">member1</div>
+				<div id="member2" class="type_member">member2</div>
+				<div id="member3" class="type_member">member3</div>
+				<div id="member4" class="type_member">member4</div>
+				<div id="member5" class="type_member">member5</div>
+				<div id="member6" class="type_member">member6</div>
+				<div id="member7" class="type_member">member7</div>
+				<div id="member8" class="type_member">member8</div>
+				<div id="member9" class="type_member">member9</div>
+				<div id="member10" class="type_member">member10</div>
+				<div id="member11" class="type_member">member11</div>
+				<div id="member12" class="type_member">member12</div>
+			</div>
+			<!-- ここまでメンバーアイコン -->
 			
 		</div>
 		<!-- メニュー４終了 -->
