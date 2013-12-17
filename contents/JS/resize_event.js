@@ -1,6 +1,6 @@
 $(window).resize(function(){
 	var window_width = $(window).width();
-	if(window_width > 1300){
+	if(window_width > 900){
 		$("#menu1_top").width(window_width);
 		$("#menu2_abst").width(window_width);
 		$("#menu3_action").width(window_width);

@@ -9,6 +9,7 @@
 	height: 400px;
 	background-color: white;
 	border: 1px solid black;
+	background-image: url(../images/window00.png);
 }
 
 #personaldata_window {
@@ -18,11 +19,20 @@
 	width: 300px;
 	height: 160px;
 	background-image: url(../images/window01.png);
+	z-index: 6;
 	/*フォント*/
 	color: white;
 	font-size: 16px;
 	font-weight: bold;
 }
+
+#charactor {
+	position: absolute;
+	left: 50px;
+	top: 100px;
+	z-index: 5;
+}
+
 
 #profile_subjects {
 	float: left;
@@ -54,7 +64,6 @@
 	width: 160px;
 	height: 400px;
 	overflow: hidden;
-	
 }
 
 .type_member {
@@ -64,7 +73,6 @@
 	bottom: 10px;
 	float: left;
 	background-color: #DDFFDD;
-	
 }
 
 .type_member:hover {

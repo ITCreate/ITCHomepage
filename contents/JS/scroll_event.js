@@ -25,8 +25,9 @@ $(window).scroll(function(){
 	$("#obj3").fadeOut("slow");	
 	if(scrollX == 0){
 		$("#obj3").fadeIn("fast");
-	}
-			
+	};
+	
+	/*
 	//多重スクロール
 	//はらべさん
 	obj2_offset = $("#obj2").offset();
@@ -41,5 +42,5 @@ $(window).scroll(function(){
 	//
 	scroll_count++;
 	$("#debug").html("X: " + scrollX  + "カウント: " +scroll_count + "方向:" +scroll_direction);	
-
+	*/
 });
