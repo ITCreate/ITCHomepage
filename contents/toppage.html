@@ -3,18 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<!-- ここからCSS -->
 <link rel="styleSheet" type="text/css" href="css/tagStyle.css">
 <link rel="styleSheet" type="text/css" href="css/introStyle.css">
 <link rel="styleSheet" type="text/css" href="css/memberStyle.css">
+<!--ここまでcss -->
 
+<!-- ここからプラグイン -->
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<!--  1.7.2 -->
+<script type="text/javascript" src="JS/jQuery-mousewheel.js"></script>
+<!-- ここまでプラグイン -->
 
+<!--　ここからjavascript -->
 <script type="text/javascript" src="JS/scroll_event.js"></script>
 <script type="text/javascript" src="JS/insidelink_event.js"></script>
 <script type="text/javascript" src="JS/resize_event.js"></script>
 <script type="text/javascript" src="JS/readbody_event.js"></script>
 <script type="text/javascript" src="JS/member_scroll.js"></script>
+<!-- ここまでjavascript -->
 
 </head>
 <body style="overflow-y: hidden">
@@ -22,7 +29,7 @@
 	<!-- ここからヘッダ -->
 	<div id="intro_header" class="intro_header">
 	<div id="header_wrap" class="db">
-		<img src="images/img_logo.jpg" class="ITC_icon"></img>
+		<img src="images/test/img_logo.jpg" class="ITC_icon"></img>
 		<div id="debug">aa</div>
 		<!-- ここからメニューリスト -->
 		<div>
@@ -103,8 +110,10 @@
 		<div id="menu4_member" class="mainarea_common">
 			<!-- メニュー４内ウインドウ -->
 			<div id="member_sub_window">
+			<img id="charactor" src="images/member/yamada.png"></img>
 				<!-- メンバーのプロフィールウインドウ -->
 				<div id="personaldata_window">
+					<!-- ウインドウ左側：項目名 -->
 					<div id="profile_subjects">
 						<div class="subject_name">Name:</div>
 						<div class="subject_name">Grade:</div>
@@ -113,22 +122,27 @@
 						<div class="subject_name">Speciality:</div>
 						<div class="subject_name">Comment:</div>
 					</div>
-						
+					<!-- 項目名終了 -->
+
+					<!-- ウインドウ右側:項目 -->	
 					<div id="myprofile">
 						<div id="personaldata_name" class="personaldata">No Name</div>
 						<div id="personaldata_grade" class="personaldata">None</div>
 						<div id="personaldata_course"> Nobe</div>
 						<div id="personaldata_birthplace">None</div>
-						<div id="personaldata_Speciality">None</div>
+						<div id="personaldata_speciality">None</div>
 						<div id="personaldata_comment"></div>
 					</div>
+					<!-- 項目終了 -->
 				</div>
 				<!-- ここまでプロフィールウインドウ -->
 			</div>
 			<!-- ここまでウインドウ -->
 
+			
 			<!-- ここからメンバーアイコン -->
 			<div id="memberwrap">
+
 				<div id="member1" class="type_member">member1</div>
 				<div id="member2" class="type_member">member2</div>
 				<div id="member3" class="type_member">member3</div>

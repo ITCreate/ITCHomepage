@@ -9,7 +9,7 @@ function member_scroll() {
 	var first_menber_top;			//一番上の要素のtop値を格納。
 	var member_scroll_speed = 2;	//上スクロールの速度。
 	var loop_border_px = 50;		//アイコン要素のtop値がこの値を超えたらそのアイコン要素を最後列に移動させる。
-	for(i=0;i < $(".type_member").length;i++){
+	for(var i=0;i < $(".type_member").length;i++){
 		nth_menber_top = $(".type_member").eq(i).offset().top;		//i番目の要素のtop値を取得。
 		$(".type_member").eq(i).offset({top: nth_menber_top - member_scroll_speed});	//i番目の要素のtop値をmember_scroll_speedに格納されている数値分上方向にずらす
 
@@ -21,19 +21,47 @@ function member_scroll() {
 				{top: first_menber_top + $(".type_member").length * $(".type_member").eq(i).height()});	//top値がloop_border_pxを超えた要素のtop値を(要素の総数*要素の高さ)分下へ移動させる。
 		}
 	}
-	setTimeout("member_scroll()", 20);	//繰り返す。
+	//setTimeout("member_scroll()", 20);	//繰り返す。
 }
 
-//【２】部員アイコンリストのマウスオーバー
-//
-$("#member1").mouseover(function(){
-	//$("#personaldata_grade").
+//【２】ホイールスクロール
+$(".type_member").mousewheel(function(eo, delta, deltaX, deltaY){
+	member_scroll();
 });
-/*
-<div id="personaldata_name" class="personaldata">Name :</div>
-					<div id="personaldata_grade" class="personaldata">Grade :</div>
-					<div id="personaldata_course" class="personaldata">Course :</div>
-					<div id="personaldata_birthplace" class="personaldata">Birthplace :</div>
-					<div id="personaldata_Speciality" class="personaldata">Speciality :</div>
-					<div id="personaldata_comment" class="personaldata">comment :</div>
-*/
+
+//【３】部員アイコンリストのマウスオーバー
+//
+$("body").ready(function(){
+	$("#member1").hover(function(){
+		var name = "芝崎 拓海";
+		var grade = "1";
+		var course = "ITテクニカル学科";
+		var birthplace = "大阪";
+		var speciality = "ビルバク";
+		var image = "images/member/gollira.jpg";
+
+		personaldata_renewal(name, grade, course, birthplace, speciality, image);
+	});
+});
+
+$("body").ready(function(){
+	$("#member2").hover(function(){
+		var name = "藤井 浩之";
+		var grade = "1";
+		var course = "ITテクニカル学科";
+		var birthplace = "鳥取";
+		var speciality = "ビルバク";
+		var image = "images/member/yamada.png";	
+		personaldata_renewal(name, grade, course, birthplace, speciality, image);
+	});
+});
+
+//個人情報を書き換えるプログラム。引数はマウスオーバーイベントから持ってくる。
+function personaldata_renewal(name, grade, course, birthplace, speciality, image){
+	$("#personaldata_name").text(name);
+	$("#personaldata_grade").text(grade);
+	$("#personaldata_course").text(course);
+	$("#personaldata_birthplace").text(birthplace);
+	$("#personaldata_speciality").text(speciality);
+	$("#charactor").attr("src", image);
+}
