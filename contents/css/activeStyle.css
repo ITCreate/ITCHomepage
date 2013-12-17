@@ -7,9 +7,9 @@
 
 #sagyou{
 -webkit-transform: rotate(90deg);
-margin-top: 50px;
-margin-left: -100px;
-width: 50%; height: auto;
+margin-top: -100px;
+margin-left: 10px;
+width: 100px; height: 400px;
 }
 
 .flip-3d: hover{
@@ -18,13 +18,7 @@ width: 50%; height: auto;
 
 
 
-#aa {
-	margin-top: -50px;
-	margin-left: -100px;
-	position: absolute;
-	top: 50px;
-	left: 100px;
-}
+
 
 #ab {
 	position: absolute;
