@@ -10,23 +10,29 @@ var prev_scrollX = 0;
 var scroll_direction = 0;
 var scroll_count = 0;
 
+//【１】スクロール方向の取得
+//座標の微分によりスクロール
 $(window).scroll(function(){
 	scrollX = $(window).scrollLeft();
 
-	//スクロール方向取得
 	if(scrollX > prev_scrollX){
 		scroll_direction = 1;	//右方向スクロール
 	}else{
 		scroll_direction = -1;	//左方向スクロール
 	}
 	prev_scrollX = scrollX;
-			
-	//GO�T�C���̕\��/��\��
+});
+
+//【２】TOPページのGO矢印
+//スクロール量が0のときフェードイン、スクロールするフェードアウト
+$(window).scroll(function(){
 	$("#obj3").fadeOut("slow");	
 	if(scrollX == 0){
 		$("#obj3").fadeIn("fast");
-	};
-	
+	}
+});
+
+$(window).scroll(function(){
 	/*
 	//多重スクロール
 	//はらべさん
@@ -44,3 +50,4 @@ $(window).scroll(function(){
 	$("#debug").html("X: " + scrollX  + "カウント: " +scroll_count + "方向:" +scroll_direction);	
 	*/
 });
+
