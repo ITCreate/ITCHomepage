@@ -3,7 +3,7 @@ var window_width = 0;
 $("body").ready(function(){
 	window_width = $(window).width();
 
-	if(window_width > 100){
+	if(window_width > 900){
 		$("#menu1_top").width(window_width);
 		$("#menu2_abst").width(window_width);
 		$("#menu3_action").width(window_width);
@@ -20,4 +20,5 @@ $("body").ready(function(){
 
 	
 	member_scroll();
+
 });

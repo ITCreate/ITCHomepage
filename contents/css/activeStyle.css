@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+/*部員紹介*/
+
+.action_flame{
+
+}
+
+#sagyou{
+-webkit-transform: rotate(90deg);
+margin-top: 50px;
+margin-left: -100px;
+width: 50%; height: auto;
+}
+
+.flip-3d: hover{
+	transform:rotateY(180deg);
+}
+
+
+
+#aa {
+	margin-top: -50px;
+	margin-left: -100px;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+#ab {
+	position: absolute;
+	top: 50px;
+	left: 540px;
+}
+
+
