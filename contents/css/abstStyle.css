@@ -1,0 +1,26 @@
+/* -- 部長挨拶 -- */
+#obj1 {
+	position: relative;
+	height: 300px;
+	width: 550px;
+	background-image: url(../images/obj1.png);
+	opacity: 1;
+	-webkit-box-shadow:6px 5px 7px #000;
+	top: 80px;
+	left:225px;
+	border-radius: 15px;
+}
+
+#obj1>h1{
+	padding: 35px 0px 10px 10px;
+	color: #FD9855;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 2px 2px 1px #F44;
+}
+
+#obj2 {
+	position: absolute;
+	bottom: 0px;
+	left:  775px
+}

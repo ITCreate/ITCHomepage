@@ -1,29 +1,16 @@
 @CHARSET "UTF-8";
 /*部員紹介*/
 
-.action_flame{
 
+.flip-3d {
+height: 350px;
+width: 260px;
+background-color: red;
 }
 
-#sagyou{
--webkit-transform: rotate(90deg);
-margin-top: -100px;
-margin-left: 10px;
-width: 100px; height: 400px;
+#sagyou:hover{
+-webkit-transform: rotateY(180deg);
 }
 
-.flip-3d: hover{
-	transform:rotateY(180deg);
-}
-
-
-
-
-
-#ab {
-	position: absolute;
-	top: 50px;
-	left: 540px;
-}
 
 

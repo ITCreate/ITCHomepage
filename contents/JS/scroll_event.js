@@ -44,10 +44,10 @@ $(window).scroll(function(){
 	obj2_offset.left = (-900 / window_width * scrollX) + 3/2 * window_width + 1000;
 	$("#obj2").	offset({left: obj2_offset.left});
 	
-	
+	*/
 	//
 	scroll_count++;
-	$("#debug").html("X: " + scrollX  + "カウント: " +scroll_count + "方向:" +scroll_direction);	
-	*/
+	$("#debug").html("X: " + scrollX  + "x: " + $(window).width() + "方向:" +scroll_direction);	
+	
 });
 
