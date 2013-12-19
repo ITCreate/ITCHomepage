@@ -1,29 +1,39 @@
 @CHARSET "UTF-8";
 /*部員紹介*/
 
-.action_flame{
-
+.profiles {
+    list-style:none;
+}
+.profiles li {
+    float:left;
+}
+.info .pic {
+    position:absolute;
+}
+.info {
+    opacity:0;
 }
 
-#sagyou{
--webkit-transform: rotate(90deg);
-margin-top: -100px;
-margin-left: 10px;
-width: 100px; height: 400px;
+
+
+
+#big .info{
+	-webkit-transition: all 0.7s;
+	transform: scale(0.8);
 }
 
-.flip-3d: hover{
-	transform:rotateY(180deg);
+#big .sagyou{
+	transition: all 0.7s;
 }
 
+.sagyou:hover{
+	opacity:1;
+	transform: scale(1);
+}
 
-
-
-
-#ab {
-	position: absolute;
-	top: 50px;
-	left: 540px;
+.sagyou:hover{
+	opacity:1;
+	transform: scale(1);
 }
 
 
