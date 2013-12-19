@@ -16,22 +16,36 @@
 /* -- header部分 -- */
 #header_wrap {
 	position: fixed;
-	width: 1000px;
-	height: 100px;
+	width: 1500px;
+	height: 120px;
+	background: -webkit-linear-gradient(#FFF 60%, #BBB);
+	background: -ms-linear-gradient(#FFF 60%, #BBB);
+
 }
 
-.intro_header {
+.no-linear-gradient .#header_wrap {
+	position: fixed;
+	width: 1500px;
+	height: 120px;
+	background: 
+}
+
+#intro_header {
 	position: relative;
 	left: 0px;
 	top: 0px;
-	background: -webkit-linear-gradient(#FFF 50%, #BBB);
+	background: -webkit-linear-gradient(#FFF 60%, #BBB);
 	height: 120px;
 	width: 5400px;
 }
 
+#ITC_String {
+	padding: 20px 0px 10px 0px;
+}
 /*ヘッダーのITCマーク*/
 .ITC_icon {
 	float: left;
+	padding: 15px 20px 0px 15px;
 }
 
 /* -- ページ内リンクリストのスタイル --*/
@@ -52,6 +66,10 @@
 	font-weight: bold;
 	text-shadow: 1px 1px 2px #000;
 	text-decoration: none;
+}
+
+.menuicon_frame:hover {
+	cursor: pointer;
 }
 
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
@@ -104,49 +122,15 @@
 	right:  0px;
 }
 
-/* -- 各表示オブジェクトの個別設定 -- */
-/* -- 部長挨拶 -- */
-#obj1 {
-	position: relative;
-	height: 300px;
-	width: 550px;
-	background-image: url(../images/obj1.png);
-	opacity: 1;
-	-webkit-box-shadow:6px 5px 7px #000;
-	top: 80px;
-	left:225px;
-	border-radius: 15px;
-}
-
-.sample {
-	color: #FD9855;
-	font-size: 30px;
-	font-weight: bold;
-	text-shadow: 2px 2px 1px #F44;
-}
-
-#obj2 {
-	position: absolute;
-	bottom: 0px;
-	left:  775px
-}
-
-/*メニュー３*/
 
 
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 /* -- フッターのスタイル -- */
-footer {
+#footer_wrap {
 	position: relative;
 	height: 100px;
 	width: 5400px;
-	background: -webkit-linear-gradient(#609030 10%, #90C060);;
-}
-
-#footer_wrap {
-	position: relative;
-	width: 700px;
-	height: 100px;
+	background: -webkit-linear-gradient(#609030 10%, #90C060);
 }
 
 #copyright {

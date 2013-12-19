@@ -8,16 +8,16 @@
 <link rel="styleSheet" type="text/css" href="css/tagStyle.css">
 <link rel="styleSheet" type="text/css" href="css/introStyle.css">
 <link rel="styleSheet" type="text/css" href="css/memberStyle.css">
-<<<<<<< HEAD
 <link rel="styleSheet" type="text/css" href="css/activeStyle.css">
-=======
+<link rel="styleSheet" type="text/css" href="css/abstStyle.css">
 <!--ここまでcss -->
->>>>>>> 0097520c24cbc5a16c2d9ede10ec1226692544c5
 
 <!-- ここからプラグイン -->
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="JS/jQuery-mousewheel.js"></script>
+<script type="text/javascript" src="JS/jQuery-mousewheel.js"></script><!-- マウスホイールjQueryプラグイン -->
+<script type="text/javascript" src="JS/modernizr.custom.69101.js"></script><!-- クロスブラウザ用プラグイン -->
 <!-- ここまでプラグイン -->
+
 
 <!--　ここからjavascript -->
 <script type="text/javascript" src="JS/scroll_event.js"></script>
@@ -31,10 +31,12 @@
 <body style="overflow-y: hidden;">
 <div id="wrap">
 	<!-- ここからヘッダ -->
-	<div id="intro_header" class="intro_header">
+	<!-- 対応ブラウザ: IE9.0以上　Firefox 25.0以上　GoogleChrome 31.0以上 -->
+
+	<div id="intro_header">
 	<div id="header_wrap" class="db">
 		<img src="images/test/img_logo.jpg" class="ITC_icon"></img>
-		<div id="debug">aa</div>
+		<img id="ITC_String" src="images/header_string.png"></img>
 		<!-- ここからメニューリスト -->
 		<div>
 			<ul>
@@ -44,6 +46,7 @@
 				<li><div id="btn4" class="menuicon_frame">部員紹介</div></li>
 			</ul>
 		</div>
+		<div id="debug">aa</div>
 		<!-- メニューリスト終了 -->
 	</div>
  	</div>
@@ -54,7 +57,7 @@
 		<!-- ここから個別メニュー -->
 		
 		<!-- メニュー１(top)開始 -->
-		<div id="menu1_top" class="mainarea_common">
+		<div id="menu1_top" class="mainarea_common db">
 
 			<!-- キャッチコピー -->
 			<img id="vcatch" src="images/TitleLogo.png" class="vcatch"></img>
@@ -82,11 +85,9 @@
 		<!-- メニュー２開始 -->
 		<div id="menu2_abst" class="mainarea_common">
 			<div id="obj1" class="dist1">
-				<br>
-				<br>
-				<div class="sample">自分達で話し、学び、創造する</div>
-				<br>
-				<p>ITC部はシステム開発の部活です。</p>
+				<h1>自分達で話し、学び、創造する</h1>
+				<p>ITC部はシステム開発の部活動です。</p>
+				<p></p>
 				<p></p>
 				<p>システム開発に興味のある方、ないしは学習の進め方がわからなくて困っている方―</p>
 				<p>ITC部に参加し、今より一歩進んだ開発を体験しませんか。</p>
@@ -103,6 +104,7 @@
 		
 		<!-- メニュー３開始 -->
 		<div id="menu3_action" class="mainarea_common db">
+<<<<<<< HEAD
 				<h2>アプリ・ソフト開発</h2>
 				<ul id = "big" class = "profiles">
 				<li>
@@ -115,6 +117,16 @@
 				</li>
 
 			<div id="ab" class="action_frame">開発報告・会議</div>
+=======
+			<div id="aa" class="action_frame db">
+				<h2>アプリ・ソフト開発</h2>
+				<div class="flip-3d">
+					<img id="sagyou" src="images/test/fujii.jpg"></img>
+				</div>
+				
+			</div>
+			<div id="ab" class="action_frame">2</div>
+>>>>>>> 7c67cb0b1e67b1a64224c9a7bfa928326660c773
 		</div>
 		<!-- メニュー３終了 -->
 		
@@ -154,7 +166,6 @@
 			
 			<!-- ここからメンバーアイコン -->
 			<div id="memberwrap">
-
 				<div id="member1" class="type_member">member1</div>
 				<div id="member2" class="type_member">member2</div>
 				<div id="member3" class="type_member">member3</div>
@@ -176,14 +187,12 @@
 	<!-- ここまでメインコンテンツ -->
 	
 	<!-- ここからフッタ -->
-	<footer>
-	<div id="footer_wrap">
+	<div id="footer_wrap" class="db">
 		<div id="copyright" class="copyright">
 			● Copyright &copy;  2013	OIC - 大阪情報コンピュータ専門学校 ITCreate部<br>
 			All Right Reserved.
 		</div>
 	</div>
-	</footer>
 	<!-- ここまでフッタ -->
 </div>
 </body>

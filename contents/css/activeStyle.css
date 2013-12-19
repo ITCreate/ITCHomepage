@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 /*部員紹介*/
 
+<<<<<<< HEAD
 .profiles {
     list-style:none;
 }
@@ -35,5 +36,18 @@
 	opacity:1;
 	transform: scale(1);
 }
+=======
+
+.flip-3d {
+height: 350px;
+width: 260px;
+background-color: red;
+}
+
+#sagyou:hover{
+-webkit-transform: rotateY(180deg);
+}
+
+>>>>>>> 7c67cb0b1e67b1a64224c9a7bfa928326660c773
 
 
