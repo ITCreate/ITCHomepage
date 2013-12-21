@@ -1,53 +1,65 @@
 @CHARSET "UTF-8";
 /*部員紹介*/
 
-<<<<<<< HEAD
+/*活動紹介(全体)*/
+.actionflame{
+	font-family: cursive;
+	width: 300px; height: 100px;
+	padding: 0px 20px;
+	float: left;
+	text-align: center;
+}
+
+/*画像の要素*/
+.sagyou{
+	width: 300px; height: 380px;
+}
+
+/*テキストの要素*/
 .profiles {
+	font-size:1px;
     list-style:none;
+    cursor: pointer;
 }
-.profiles li {
-    float:left;
-}
-.info .pic {
-    position:absolute;
-}
+
+/*画像の後ろにあるボックス要素*/
 .info {
-    opacity:0;
+z-index: -20;
+position: relative;
+left: 150px;
+font-family: 'Lato', sans-serif;
+color: black;
+margin-left: -90px;
+margin-top: -292px;
+background-color: rgba(55, 168, 80, 1);
+width: 160px;
+height: 189px;
 }
 
+/*画像のアニメーション速度*/
+#big .sagyou{
+	transition: all 0.7s;
+}
 
-
-
+/*ボックス要素のアニメーション速度*/
 #big .info{
 	-webkit-transition: all 0.7s;
 	transform: scale(0.8);
 }
 
-#big .sagyou{
-	transition: all 0.7s;
-}
-
+/*オンマウス時の画像のアニメーション*/
 .sagyou:hover{
-	opacity:1;
-	transform: scale(1);
+	opacity:0;
+	-webkit-transform: scale(1.5);
 }
 
-.sagyou:hover{
-	opacity:1;
-	transform: scale(1);
-}
-=======
-
-.flip-3d {
-height: 350px;
-width: 260px;
-background-color: red;
+/*オンマウス時のボックス要素のアニメーション*/
+#big li:hover .info{
+	-webkit-opacity:0.7;
+	-webkit-transform: scale(2);
 }
 
-#sagyou:hover{
--webkit-transform: rotateY(180deg);
-}
 
->>>>>>> 7c67cb0b1e67b1a64224c9a7bfa928326660c773
+
 
 
