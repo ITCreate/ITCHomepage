@@ -12,7 +12,8 @@
  //【１】[ページTOP]ボタンを押した時の画面スクロール
 $("body").ready(function(){
 	$("#btn1").click(function(){
-		$("body").animate({scrollLeft: 0}, "slow");
+		$("html, body").animate({scrollLeft: 0}, "slow");
+
 	});
 });
 
@@ -20,7 +21,7 @@ $("body").ready(function(){
 $("body").ready(function(){
 	$("#btn2").click(function(){
 		var scroll_amount = $("#menu1_top").width() * document.body.style.zoom;
-		$("body").animate({scrollLeft: scroll_amount}, "slow");
+		$("html, body").animate({scrollLeft: scroll_amount}, "slow");
 	});
 });
 
@@ -28,7 +29,7 @@ $("body").ready(function(){
 $("body").ready(function(){
 	$("#btn3").click(function(){
 		var scroll_amount = ($("#menu1_top").width() + $("#menu2_abst").width()) * document.body.style.zoom;
-		$("body").animate({scrollLeft: scroll_amount}, "slow");
+		$("html, body").animate({scrollLeft: scroll_amount}, "slow");
 	});
 });
 
@@ -36,6 +37,6 @@ $("body").ready(function(){
 $("body").ready(function(){
 	$("#btn4").click(function(){
 		var scroll_amount = ($("#menu1_top").width() + $("#menu2_abst").width() + $("#menu3_action").width()) * document.body.style.zoom;
-		$("body").animate({scrollLeft: scroll_amount}, "slow");
+		$("html, body").animate({scrollLeft: scroll_amount}, "slow");
 	});
 });

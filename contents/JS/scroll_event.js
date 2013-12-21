@@ -11,7 +11,7 @@ var scroll_direction = 0;
 var scroll_count = 0;
 
 //【１】スクロール方向の取得
-//座標の微分によりスクロール
+//座標の差分によりスクロール方向を取得
 $(window).scroll(function(){
 	scrollX = $(window).scrollLeft();
 

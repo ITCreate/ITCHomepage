@@ -18,23 +18,34 @@
 	position: fixed;
 	width: 1500px;
 	height: 120px;
-	background: -webkit-linear-gradient(#FFF 60%, #BBB);
+	background: linear-gradient(#FFF 60%, #BBB);
 	background: -ms-linear-gradient(#FFF 60%, #BBB);
-
+	z-index: 20;
 }
 
-.no-linear-gradient .#header_wrap {
+.no-linear-gradient #header_wrap {
 	position: fixed;
 	width: 1500px;
 	height: 120px;
-	background: 
+	background: #DDD;
 }
 
 #intro_header {
 	position: relative;
 	left: 0px;
 	top: 0px;
-	background: -webkit-linear-gradient(#FFF 60%, #BBB);
+	background: linear-gradient(#FFF 60%, #BBB);
+	background: -ms-linear-gradient(#FFF 60%, #BBB);
+	height: 120px;
+	width: 5400px;
+}
+
+.no-linear-gradient #intro_header {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	background: linear-gradient(#FFF 60%, #BBB);
+	background: -ms-linear-gradient(#FFF 60%, #BBB);
 	height: 120px;
 	width: 5400px;
 }
@@ -57,7 +68,27 @@
 	height: 40px;
 	margin: 3px;
 	border: 1px solid #90C060;
-	background: -webkit-linear-gradient(#FFF 50%, #BBB);
+	background: linear-gradient(#FFF 50%, #BBB);
+	background: -ms-linear-gradient(#FFF 50%, #BBB);
+	border-radius: 5px;
+	text-align: center;
+	/*フォント*/
+	color: #90C060;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #000;
+	text-decoration: none;
+}
+
+.no-linear-gradient {
+	display: block;
+	float: left;
+	width: 120px;
+	height: 40px;
+	margin: 3px;
+	border: 1px solid #90C060;
+	background: linear-gradient(#FFF 50%, #BBB);
+	background: -ms-linear-gradient(#FFF 50%, #BBB);
 	border-radius: 5px;
 	text-align: center;
 	/*フォント*/
@@ -74,6 +105,31 @@
 
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 /* -- メインコンテンツ(中央部) -- */
+#dashgollira {
+	position: absolute;
+	bottom: 80px;
+	left: 550px;
+	z-index: 10;
+}
+
+#background-skin {
+
+}
+
+#menu1_background-skin {
+	position: absolute;
+	bottom: 0px;
+	z-index: 1;
+}
+
+#menu23_background-skin {
+	position: absolute;
+	left: 1300px;
+	bottom: -10px;
+	z-index: 1;
+
+}
+
 #inclusion_maincontents {
 	position:relative;
 	clear: left;
@@ -95,19 +151,30 @@
 	position: absolute;
 	top: 120px;
 	left: 430px;
+	z-index: 2;
 }
 
 #whatsnew {
 	position: absolute;
 	bottom: 20px;
 	background-image: url(../images/whatsnews.png);
-	opacity: 1;
 	left: 80px;
 	width: 475px;
 	height: 150px;
 	border-radius: 5px;
-	-webkit-box-shadow:6px 5px 7px #000;
-	
+	box-shadow:6px 5px 7px #000;
+	z-index: 11;
+}
+
+.no-box-shadow #whatsnew {
+	position: absolute;
+	bottom: 20px;
+	left: 80px;
+	background-image: url(../images/whatsnews.png);
+	width: 475px;
+	height: 150px;
+	border-radius: 5px;
+	border: 1px solid black;
 }
 
 #whatsnew ul {
@@ -130,7 +197,15 @@
 	position: relative;
 	height: 100px;
 	width: 5400px;
-	background: -webkit-linear-gradient(#609030 10%, #90C060);
+	background: linear-gradient(#609030 10%, #90C060);
+	background: -ms-linear-gradient-gradient(#609030 10%, #90C060);
+}
+
+.no-linear-gradient #footer_wrap {
+	position: relative;
+	height: 100px;
+	width: 5400px;
+	background: #90C060;
 }
 
 #copyright {

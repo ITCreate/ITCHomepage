@@ -1,6 +1,6 @@
 //【１】ウインドウリサイズ時に
 $(window).resize(function(){
-	var window_width = $(window).width();
+	var window_width = $(window).width() / document.body.style.zoom;
 
 	if(window_width > 900){
 		$("#menu1_top").width(window_width);
