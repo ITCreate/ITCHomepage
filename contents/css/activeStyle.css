@@ -17,6 +17,7 @@
 
 /*テキストの要素*/
 .profiles {
+	font-size:15px;
     list-style:none;
     cursor: pointer;
 }
