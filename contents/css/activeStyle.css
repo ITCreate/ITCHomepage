@@ -29,11 +29,13 @@ position: relative;
 left: 150px;
 font-family: 'Lato', sans-serif;
 color: black;
-margin-left: -90px;
-margin-top: -292px;
-background: linear-gradient(#fff, #aaa);
-width: 160px;
-height: 189px;
+margin-left: -150px;
+margin-top: -385px;
+background: linear-gradient(#ccc, #aaa);
+width: 300px;
+height: 377px;
+-webkit-transform: scale(0.1,0.1);
+
 }
 
 /*画像のアニメーション速度*/
@@ -50,13 +52,13 @@ height: 189px;
 /*オンマウス時の画像のアニメーション*/
 .sagyou:hover{
 	opacity:0;
-	-webkit-transform: scale(1.5);
+	-webkit-transform: scale(0.75);
 }
 
 /*オンマウス時のボックス要素のアニメーション*/
 #big li:hover .info{
 	-webkit-opacity:0.7;
-	-webkit-transform: scale(2);
+	-webkit-transform: scale(1);
 }
 
 
