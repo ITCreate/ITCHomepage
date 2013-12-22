@@ -17,7 +17,6 @@
 
 /*テキストの要素*/
 .profiles {
-	font-size:1px;
     list-style:none;
     cursor: pointer;
 }
@@ -31,7 +30,7 @@ font-family: 'Lato', sans-serif;
 color: black;
 margin-left: -90px;
 margin-top: -292px;
-background-color: rgba(55, 168, 80, 1);
+background: linear-gradient(#fff, #aaa);
 width: 160px;
 height: 189px;
 }
