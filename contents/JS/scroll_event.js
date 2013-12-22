@@ -46,8 +46,7 @@ $(window).scroll(function(){
 	
 	*/
 	//
-	scroll_count++;
-	$("#debug").html("X: " + scrollX  + "x: " + $(window).width() + "方向:" +scroll_direction);	
+
+	//$("#debug").html("scrollX: " + scrollX  + "x: " + $(window).width() + "方向:" +scroll_direction);	
 	
 });
-

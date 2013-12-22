@@ -38,7 +38,7 @@ $("body").ready(function(){
 //【２】１ページ目、ページTOPの中央キャッチコピー
 $("body").ready(function(){
 	obj_offset = $("#menu1_top").width()/2 - $("#vcatch").width()/2;
-	$("#vcatch").offset({left: obj_offset});
+	$("#vcatch").offset({left: obj_offset*document.body.style.zoom});
 });
 
 //【３】４ページ目、部員紹介のウインドウ

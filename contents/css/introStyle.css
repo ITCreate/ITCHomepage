@@ -106,28 +106,17 @@
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 /* -- メインコンテンツ(中央部) -- */
 #dashgollira {
+	display: none;
 	position: absolute;
 	bottom: 80px;
 	left: 550px;
 	z-index: 10;
 }
 
-#background-skin {
-
-}
-
-#menu1_background-skin {
+#background_skin {
 	position: absolute;
-	bottom: 0px;
-	z-index: 1;
-}
-
-#menu23_background-skin {
-	position: absolute;
-	left: 1300px;
-	bottom: -10px;
-	z-index: 1;
-
+	top: -650px;
+	z-index: -1000;
 }
 
 #inclusion_maincontents {
