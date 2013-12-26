@@ -80,6 +80,41 @@
 	text-decoration: none;
 }
 
+.nav{
+	overflow:hidden;
+	position: relative;
+
+}
+
+.nav a{
+	display: block;
+	float: left;
+	position: relative;
+	text-decoration: none;
+	transition: .7s;
+}
+
+.nav a:hover {
+      color: #ffffff; }
+
+.effect {
+  left: -12.5%;
+  transition: 0.7s ease-in-out; }
+
+.nav a:nth-child(1):hover ~ .effect{
+	left: 12.5%;
+}
+
+.ph-line-nav .effect{
+	width: 100px;
+	height: 3px;
+	background: #c6342e;
+	box-shadow: 0 1px 0 white;
+	margin-left: 15px;
+	margin-top: 45px;
+}
+
+
 .no-linear-gradient {
 	display: block;
 	float: left;

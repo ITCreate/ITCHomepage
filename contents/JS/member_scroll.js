@@ -39,35 +39,123 @@ $(".type_member").mousewheel(function(eo, delta, deltaX, deltaY){
 //
 $("body").ready(function(){
 	$("#member1").hover(function(){
-		var name = "芝崎 拓海";
+		var name = "筒井瞬";
 		var grade = "1";
 		var course = "ITテクニカル学科";
-		var birthplace = "大阪";
 		var speciality = "ビルバク";
-		var image = "images/member/gollira.jpg";
+		var image = "images/member/parman.jpg";
 
-		personaldata_renewal(name, grade, course, birthplace, speciality, image);
+		personaldata_renewal(name, grade, course, speciality, image);
 	});
 });
 
 $("body").ready(function(){
 	$("#member2").hover(function(){
-		var name = "藤井 浩之";
-		var grade = "1";
-		var course = "ITテクニカル学科";
-		var birthplace = "鳥取";
+		var name = "森本";
+		var grade = "2";
+		var course = "ネットワーク学科";
+		var speciality = "ビルバク";
+		var image = "images/member/gollira.jpg";
+
+		personaldata_renewal(name, grade, course, speciality, image);
+	});
+});
+
+$("body").ready(function(){
+	$("#member3").hover(function(){
+		var name = "石田ゆうた";
+		var grade = "3";
+		var course = "ITネットワーク学科";
 		var speciality = "ビルバク";
 		var image = "images/member/yamada.png";	
-		personaldata_renewal(name, grade, course, birthplace, speciality, image);
+		personaldata_renewal(name, grade, course, speciality, image);
+	});
+});
+
+$("body").ready(function(){
+	$("#member4").hover(function(){
+		var name = "七塚";
+		var grade = "3";
+		var course = "ITネットワーク学科";
+		var speciality = "ビルバク";
+		var image = "images/member/doragon.jpg";	
+		personaldata_renewal(name, grade, course, speciality, image);
+	});
+});
+
+$("body").ready(function(){
+	$("#member5").hover(function(){
+		var name = "マスミ";
+		var grade = "3";
+		var course = "ITネットワーク学科";
+		var speciality = "ビルバク";
+		var image = "images/member/yamada.png";	
+		personaldata_renewal(name, grade, course, speciality, image);
+	});
+});
+
+$("body").ready(function(){
+	$("#member6").hover(function(){
+		var name = "東";
+		var grade = "3";
+		var course = "ITネットワーク学科";
+		var speciality = "ビルバク";
+		var image = "images/member/megane.gif";	
+		personaldata_renewal(name, grade, course, speciality, image);
+	});
+});
+
+$("body").ready(function(){
+	$("#member7").hover(function(){
+		var name = "女";
+		var grade = "3";
+		var course = "ITネットワーク学科";
+		var speciality = "ビルバク";
+		var image = "images/member/girl.jpg";	
+		personaldata_renewal(name, grade, course, speciality, image);
+	});
+});
+
+$("body").ready(function(){
+	$("#member8").hover(function(){
+		var name = "相原";
+		var grade = "2";
+		var course = "ITネットワーク学科";
+		var speciality = "ビルバク";
+		var image = "images/member/mogura.jpg";	
+		personaldata_renewal(name, grade, course, speciality, image);
+	});
+});
+
+$("body").ready(function(){
+	$("#member9").hover(function(){
+		var name = "芝崎 拓海";
+		var grade = "1";
+		var course = "ITテクニカル学科";
+		var speciality = "ビルバク";
+		var image = "images/member/gollira.jpg";
+
+		personaldata_renewal(name, grade, course, speciality, image);
+	});
+});
+
+$("body").ready(function(){
+	$("#member10").hover(function(){
+		var name = "藤井";
+		var grade = "1";
+		var course = "ITテクニカル学科";
+		var speciality = "ビルバク";
+		var image = "images/member/gollira.jpg";
+
+		personaldata_renewal(name, grade, course,  speciality, image);
 	});
 });
 
 //個人情報を書き換えるプログラム。引数はマウスオーバーイベントから持ってくる。
-function personaldata_renewal(name, grade, course, birthplace, speciality, image){
+function personaldata_renewal(name, grade, course, speciality, image){
 	$("#personaldata_name").text(name);
 	$("#personaldata_grade").text(grade);
 	$("#personaldata_course").text(course);
-	$("#personaldata_birthplace").text(birthplace);
 	$("#personaldata_speciality").text(speciality);
 	$("#charactor").attr("src", image);
 }

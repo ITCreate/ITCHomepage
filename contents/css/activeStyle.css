@@ -24,6 +24,8 @@
 
 /*画像の後ろにあるボックス要素*/
 .info {
+padding-left: 10px;
+padding-right: 10px;
 z-index: -20;
 position: relative;
 left: 150px;
@@ -31,11 +33,12 @@ font-family: 'Lato', sans-serif;
 color: black;
 margin-left: -150px;
 margin-top: -385px;
-background: linear-gradient(#ccc, #aaa);
-width: 300px;
+background: linear-gradient(#fff, #8b5);
+width: 280px;
 height: 377px;
 -webkit-transform: scale(0.1,0.1);
-
+-moz-transform: scale(0.1,0.1);
+-ms-transform: scale(0.1,0.1);
 }
 
 /*画像のアニメーション速度*/
@@ -45,20 +48,29 @@ height: 377px;
 
 /*ボックス要素のアニメーション速度*/
 #big .info{
-	-webkit-transition: all 0.7s;
-	transform: scale(0.8);
-}
+	-webkit-transition: all 0.9s;
+	-webkit-transform: scale(0.8)
+	-moz-transition: all 0.9s;
+	-moz-transform: scale(0.8);	
+	-ms-transition: all 0.9s;
+	-ms-transform: scale(0.8);
+	}
 
 /*オンマウス時の画像のアニメーション*/
 .sagyou:hover{
 	opacity:0;
-	-webkit-transform: scale(0.75);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+
 }
 
 /*オンマウス時のボックス要素のアニメーション*/
 #big li:hover .info{
-	-webkit-opacity:0.7;
+	opacity:0.8;
 	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
 }
 
 
