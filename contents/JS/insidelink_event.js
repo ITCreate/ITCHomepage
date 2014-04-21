@@ -13,14 +13,13 @@
 $("body").ready(function(){
 	$("#btn1").click(function(){
 		$("html, body").animate({scrollLeft: 0}, "slow");
-
 	});
 });
 
 //【２】[部活概要]ボタンを押した時の画面スクロール
 $("body").ready(function(){
 	$("#btn2").click(function(){
-		var scroll_amount = $("#menu1_top").width() * document.body.style.zoom;
+		var scroll_amount = $("#menu1_top").width();
 		$("html, body").animate({scrollLeft: scroll_amount}, "slow");
 	});
 });
@@ -28,7 +27,7 @@ $("body").ready(function(){
 //【３】[活動紹介]ボタンを押した時の画面スクロール
 $("body").ready(function(){
 	$("#btn3").click(function(){
-		var scroll_amount = ($("#menu1_top").width() + $("#menu2_abst").width()) * document.body.style.zoom;
+		var scroll_amount = ($("#menu1_top").width() + $("#menu2_abst").width());
 		$("html, body").animate({scrollLeft: scroll_amount}, "slow");
 	});
 });
@@ -36,7 +35,7 @@ $("body").ready(function(){
 //【４】[部員紹介]ボタンを押した時の画面スクロール
 $("body").ready(function(){
 	$("#btn4").click(function(){
-		var scroll_amount = ($("#menu1_top").width() + $("#menu2_abst").width() + $("#menu3_action").width()) * document.body.style.zoom;
+		var scroll_amount = ($("#menu1_top").width() + $("#menu2_abst").width() + $("#menu3_action").width());
 		$("html, body").animate({scrollLeft: scroll_amount}, "slow");
 	});
 });

@@ -1,0 +1,74 @@
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* -- メインコンテンツ(中央部) -- */
+#background_skin {
+	position: absolute;
+	top: -650px;
+	z-index: -1000;
+}
+
+#inclusion_maincontents {
+	position:relative;
+	clear: left;
+	height: 450px;
+	width: 5000px;
+}
+
+.mainarea_common {
+	float: left;
+	position: relative;
+	display: block;
+	width: 1100px;
+	height: 450px;
+}
+
+/* -- ページTOPのコンテンツ --*/
+.vcatch {
+	position: absolute;
+	top: 120px;
+	left: 430px;
+	z-index: 2;
+}
+
+#whatsnew {
+	position: absolute;
+	bottom: 20px;
+	background-image: url(../images/whatsnews.png);
+	left: 80px;
+	width: 475px;
+	height: 150px;
+	border-radius: 5px;
+	box-shadow:6px 5px 7px #000;
+	z-index: 5;
+}
+
+.no-box-shadow #whatsnew {
+	position: absolute;
+	bottom: 20px;
+	left: 80px;
+	background-image: url(../images/whatsnews.png);
+	width: 475px;
+	height: 150px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+#whatsnew ul {
+	position: relative;
+	margin-top: 45px;
+	padding-left: 20px;
+}
+
+#obj3 {
+	position: absolute;
+	bottom: 50px;
+	right:  0px;
+}
+
+
+/* 未実装　―　ゴリラ―*/
+#dashgollira {
+	position: absolute;
+	bottom: 10px;
+	left: 660px;
+	z-index: 10;
+}

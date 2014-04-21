@@ -1,6 +1,14 @@
 @CHARSET "UTF-8";
 /*部員紹介*/
 
+.menuicon_frame{
+	transition: .7s;
+}
+
+.menuicon_frame:hover{
+ color: #ffffff;
+}
+
 /*活動紹介(全体)*/
 .actionflame{
 	font-family: cursive;
@@ -15,8 +23,9 @@
 	width: 300px; height: 380px;
 }
 
-/*テキストの要素*/
-.profiles {
+/*テキスト*/
+
+.sagyou{
 	font-size:15px;
     list-style:none;
     cursor: pointer;

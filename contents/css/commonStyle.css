@@ -1,0 +1,149 @@
+
+/* -- デバッグ用 -- */
+.db {
+	border: 1px solid black;
+}
+
+#wrap {
+	height:670px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#wrap {
+	height: 100%;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* -- header部分 -- */
+#header_wrap {
+	position: fixed;
+	width: 1500px;
+	height: 120px;
+	background: linear-gradient(#FFF 60%, #BBB);
+	background: -ms-linear-gradient(#FFF 60%, #BBB);
+	z-index: 20;
+}
+
+.no-linear-gradient #header_wrap {
+	position: fixed;
+	width: 1500px;
+	height: 120px;
+	background: #DDD;
+}
+
+#intro_header {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	background: linear-gradient(#FFF 60%, #BBB);
+	background: -ms-linear-gradient(#FFF 60%, #BBB);
+	height: 120px;
+	width: 5400px;
+}
+
+.no-linear-gradient #intro_header {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	background: linear-gradient(#FFF 60%, #BBB);
+	background: -ms-linear-gradient(#FFF 60%, #BBB);
+	height: 120px;
+	width: 5400px;
+}
+
+#ITC_String {
+	padding: 20px 0px 10px 0px;
+}
+/*ヘッダーのITCマーク*/
+.ITC_icon {
+	float: left;
+	padding: 15px 20px 0px 15px;
+}
+
+/* -- ページ内リンクリストのスタイル --*/
+/*ページ内リンクボタンのスタイル*/
+.menuicon_frame {
+	display: block;
+	float: left;
+	width: 120px;
+	padding-top: 8px;
+	padding-bottom: 17px;
+	margin: 3px;
+	border: 1px solid #90C060;
+	background: linear-gradient(#FFF 50%, #BBB);
+	background: -ms-linear-gradient(#FFF 50%, #BBB);
+	border-radius: 5px;
+	text-align: center;
+	/*フォント*/
+	color: #90C060;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #000;
+	text-decoration: none;
+}
+
+
+
+.no-linear-gradient {
+	display: block;
+	float: left;
+	width: 120px;
+	height: 40px;
+	margin: 3px;
+	border: 1px solid #90C060;
+	background: linear-gradient(#FFF 50%, #BBB);
+	background: -ms-linear-gradient(#FFF 50%, #BBB);
+	border-radius: 5px;
+	text-align: center;
+	/*フォント*/
+	color: #90C060;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #000;
+	text-decoration: none;
+}
+
+.menuicon_frame:hover {
+	cursor: pointer;
+}
+
+
+
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+/* -- フッターのスタイル -- */
+#footer_wrap {
+}
+
+.no-linear-gradient #footer_wrap {
+	position: relative;
+	height: 300px;
+	width: 1500px;
+	background: #90C060;
+}
+
+#copyright {
+	position: fixed;
+	top: 580px;
+	width: 2400px;
+	height: 100px;
+	padding: 10px;
+	background: linear-gradient(#609030 10%, #90C060);
+	background: -ms-linear-gradient-gradient(#609030 10%, #90C060);
+	/*フォント*/
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	color: white;
+	text-shadow: 1px 1px 3px #000; 
+}

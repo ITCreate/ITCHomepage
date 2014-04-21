@@ -1,17 +1,29 @@
 
 @CHARSET "UTF-8";
 /*部員紹介*/
-#member_sub_window {
+
+/* ---------- 真ん中のウインドウ ---------- */
+/* -- ウインドウの包括　バックスクリーン -- */
+#member_window_wrap {
 	position: absolute;
 	left: 300px;
 	top: 10px;
 	width: 600px;
 	height: 400px;
 	background-color: white;
-	border: 1px solid black;
-	background-image: url(../images/window00.png);
+	z-index: 4;
+	overflow: hidden;
 }
 
+/* -- ウインドウの枠画像 -- */
+#window_frame {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	z-index: 8;
+}
+
+/* -- ウインドウ内の個人データ掲載ウインドウ -- */
 #personaldata_window {
 	position: absolute;
 	bottom: 20px;
@@ -19,60 +31,117 @@
 	width: 300px;
 	height: 160px;
 	background-image: url(../images/window01.png);
-	z-index: 6;
+	z-index: 7;
 	/*フォント*/
 	color: white;
 	font-size: 16px;
 	font-weight: bold;
 }
 
+/* -- ウインドウ内の個人画像 -- */
 #charactor {
 	position: absolute;
-	left: 50px;
-	top: 100px;
+	left: 0px;
+	top: 0px;
+	margin-top: 50px;
+	margin-left: 70px;
 	z-index: 5;
 }
 
-
-
+/* -- 個人情報の項目名：　左側 -- */
 #profile_subjects {
 	float: left;
-
 	text-align: right;
 	margin-right: 10px;
 	margin-top: 35px;
 	margin-left: 8px;
 }
 
+/* -- 個人情報：　右側 -- */
 #myprofile {
 	float: left;
 	text-align: left;
+	width: 200px;
 	margin-top: 35px;
 }
-.subject_name {
 
-}
 
-.personaldata {
-	
-
-}
-
-#memberwrap {
+/* ---------- メンバーセレクトウインドウ ---------- */
+/* --  -- */
+#memberwindow {
 	position: absolute;
-	left: 920px;
+	left: 900px;
 	top: 10px;
-	width: 160px;
+	width: 200px;
 	height: 400px;
+
+}
+
+/* -- メンバーアイコン表示領域 -- */
+#memberwrap {
+	float: left;
+	height: 280px;
+	width: 156px;
 	overflow: hidden;
 }
 
-.type_member {
-	height: 60px;
-	width: 150px;
+
+/* ----- 枠 ----- */
+#scroll_upside {
+	position: relative;
+	width: 188px;
+	padding: 14px 0px;
+	background: linear-gradient(#FFF 60%,#BBB);
 	border-radius: 5px;
-	bottom: 10px;
+	border: solid 1px green;
+	text-align: center;
+	font-size: 30px;
+	color: #D54;
+}
+
+#scroll_upside:hover {
+	cursor: pointer;
+}
+
+#frame_left {
 	float: left;
+	width: 15px;
+	height: 278px;
+	background: -webkit-gradient(linear,left center, right center, from(green), to(#BBB));
+	background: -moz-linear-gradient(left, green, #BBB);
+	border: solid 1px gray;
+}
+
+#frame_right {
+	float: left;
+	width: 15px;
+	height: 278px;
+	background: -webkit-gradient(linear,left center, right center, from(#BBB), to(green));
+	background: -moz-linear-gradient(left, #BBB, green);
+	border: solid 1px gray;
+}
+
+#scroll_downside {
+	float: left;
+	width:188px;
+	padding: 14px 0px;
+	background: linear-gradient(#BBB, #FFF 60%);
+	border-radius: 5px;
+	border: solid 1px green;
+	text-align: center;
+	font-size: 30px;
+	color: #D54;
+}
+
+#scroll_downside:hover {
+	cursor: pointer;
+}
+/* -- メンバーセレクトアイコン -- */
+.type_member {
+	float: left;
+	height: 70px;
+	width: 156px;
+	border-radius: 5px;
 	background-color: #DDFFDD;
 }
 
@@ -86,54 +155,44 @@
 
 #member2 {
 
-
 }
 
 #member3 {
 
-
 }
 
-
 #member4 {
-
 
 }
 
 #member5 {
 
-
 }
 
 #member6 {
-
 
 }
 
 #member7 {
 
-
 }
 
 #member8 {
-
 
 }
 
 #member9 {
 
-
 }
 
 #member10 {
 
-
 }
+
 #member11 {
 
-
 }
-#member12 {
 
+#member12 {
 
 }
