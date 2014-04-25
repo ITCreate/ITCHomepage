@@ -28,14 +28,23 @@
 			}
 			.what{
 				position:absolute;
-				left:1500px;
-				top:100px;
+				left:1040px;
+				top:150px;
 				width:500px;
 				height:300px;
 				background-color:#FFF;
 				padding:5px;
 				border-radius:1em;
 				box-shadow:3px 3px 5px 5px rgba(0,0,0,0.3);
+				-webkit-transform:scale(0.15);
+				transition-property:top, left, -webkit-transform;
+				transition-duration:0.5s;
+				transition-timing-function:ease-out;
+			}
+			.what.animation{
+				top:100px;
+				left:1150px;
+				-webkit-transform: scale(1);
 			}
 			.what h1{
 				margin:5px;
@@ -76,13 +85,16 @@
 			.scrolly{
 				top:50px;
 			}
-			.animation{
+			.logo.animation{
 				top:100px;
 				opacity:1;
 			}
 		</style>
 		<script type="text/javascript">
 			$(function(){
+				//ページ読み込み時のアニメーション
+				$('#logo').addClass('animation');
+
 				$(window).scroll(function(){
 					var y = $(this).scrollTop();
 					var x = $(this).scrollLeft();
@@ -103,15 +115,26 @@
 					}
 
 
-					if(x < 700){
+					if(x < 450){
 						$('#logo').addClass('animation');
 					}else{
 						$('#logo').removeClass('animation');
+					}
+					if(x > 550){
+						showDescription();
+					}else{
+						hideDescription();
 					}
 				});
 
 				function linear(a, x, b){
 					return Math.round(a * x + b);
+				}
+				function showDescription(){
+					$('.what').addClass('animation');
+				}
+				function hideDescription(){
+					$('.what').removeClass('animation');
 				}
 			});
 		</script>
