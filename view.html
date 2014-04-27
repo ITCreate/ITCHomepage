@@ -10,6 +10,12 @@
 				background-image: url("./images/background_oic.png");
 				background-position:0 -600px;
 				z-index:-9999;
+				transition-property:background-position;
+				transition-duration:1s;
+				transition-timing-function: cubic-bezier(0.7, 0, 1.0, 1.0);
+			}
+			.layer1.animation{
+				background-position:-600px 0px;	
 			}
 			#logo{
 				position:absolute;
@@ -37,7 +43,7 @@
 				border-radius:1em;
 				box-shadow:3px 3px 5px 5px rgba(0,0,0,0.3);
 				-webkit-transform:scale(0.15);
-				transition-property:top, left, -webkit-transform;
+				transition-property:top, left, -webkit-transform, opacity;
 				transition-duration:0.5s;
 				transition-timing-function:ease-out;
 			}
@@ -45,6 +51,10 @@
 				top:100px;
 				left:1150px;
 				-webkit-transform: scale(1);
+			}
+			.what.upanimation{
+				top:20px;
+				left:1300px;
 			}
 			.what h1{
 				margin:5px;
@@ -89,9 +99,21 @@
 				top:100px;
 				opacity:1;
 			}
+			.hide{
+				opacity:0;
+			}
+
+			#footer{
+				position:absolute;
+				width:4800px;
+				top:600px;
+				
+				background-color:#DDD;
+			}
 		</style>
 		<script type="text/javascript">
 			$(function(){
+				window.stratum = 0;
 				//ページ読み込み時のアニメーション
 				$('#logo').addClass('animation');
 
@@ -100,20 +122,6 @@
 					var x = $(this).scrollLeft();
 					$('.scrollx').text("x:" + x + 'px').css('left',(x + 50)+"px");
 					$('.scrolly').text("y:" + y + 'px').css('left',(x + 50)+"px");
-
-					if(x < 1400){
-						$('.layer1').css('background-position-y', '-600px');
-					}
-					//右上に上がる処理
-					if(x > 1400 && x < 2000){
-						$('.layer1').css('background-position-y', -600 + linear(x / 100 ,105 , -1500) + 'px');
-						console.log(linear(x / 100 ,105 , -1470));
-					}
-
-					if(x > 2000){
-						$('.layer1').css('background-position-y', '0px');
-					}
-
 
 					if(x < 450){
 						$('#logo').addClass('animation');
@@ -125,6 +133,13 @@
 					}else{
 						hideDescription();
 					}
+					if(x < 1100){
+						downStairs();
+					}else{
+						upStairs();
+				//		hideDescription();
+					}
+					
 				});
 
 				function linear(a, x, b){
@@ -136,10 +151,29 @@
 				function hideDescription(){
 					$('.what').removeClass('animation');
 				}
+				function upStairs(){
+					$('.layer1').addClass('animation');
+					$('.what').addClass('upanimation');
+				}
+				function downStairs(){
+					$('.layer1').removeClass('animation');
+					$('.what').removeClass('upanimation');
+				}
+				function hide(className){
+					className.forEach(function(e){
+						$(e).addClass('hide');	
+					});
+				}
+				function show(className){
+					className.forEach(function(e){
+						$(e).removeClass('hide');	
+					});
+				}
 			});
 		</script>
 	</head>
 	<body>
+	<div id="container">
 	<div class="layer1"></div>
 	<div id="logo" class="logo"></div>
 
@@ -160,6 +194,9 @@
 		<p>ringo</p>
 		<p class="scroll scrolly">y:-</p>
 		<p class="scroll scrollx">x:-</p>
-
+	<div id="footer">
+		<h3>Copyright &copy; 2014 OIC - 大阪情報コンピュータ専門学校 ITCreate部 All Rights Reserved.<h3>
+	</div>
+	</div>
 	</body>
 </html>
